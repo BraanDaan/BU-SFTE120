@@ -2,7 +2,8 @@ import './App.css';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProductPage from './screens/product';
+import ProductPage from './screens/productscreen';
+import ConcentratesSorted from './screens/concentrates';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Container>
           <Routes>
             <Route path='/product/:id' element={<ProductPage/>} />
+            <Route path='/product/concentrates' element={<ConcentratesSorted/>}/>
           </Routes>
         </Container>
       </main>
